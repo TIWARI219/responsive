@@ -1,0 +1,194 @@
+/*CSS RESET*/
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*NAVIGATION BAR*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/*NAVIGATION BAR:LOGO AND IMAGE*/
+#logo{
+    margin: 0px 21px;
+}
+#logo img{
+    height: 100px;
+    margin: 3px 6px;
+}
+/*NAVIGATION BAR:LIST STYLING*/
+#navbar ul{
+    display: flex;
+}
+/*PSEUDO SELECTOR*/
+#navbar::before{
+    content: "";
+    background-color: wheat
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/*HOME SECTION*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("../foodie1.jpg") no-repeat center center/cover;
+    height: 753px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/*UTILITIES CLASSES*/
+.btn{
+    padding: 6px 6px;
+    border: 2px solid white;
+    background-color: lightskyblue;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.h-primary{
+    padding: 80px;
+    font-family: 'Bree Serif', serif;
+    font-size: xx-large;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    font-size: large;
+}
+.center{
+    text-align: center;
+}
+/*SERVICES SECTION*/
+#services{
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 14px;
+    margin: auto;
+    display: block;
+    border-radius: 28px;
+    background: lightgrey;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+/*CLIENTS SECTION*/
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+}
+.client-item{
+    padding: 34px;
+}
+#client-section{
+    height: 389px;
+    position: relative;
+    margin: 30px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../section_back.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/*CONTACT SECTION*/
+#contact{
+    position: relative;
+    margin-bottom: 30px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../CONTACT_US.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box textarea{
+    height: 87px;
+} 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+.us{
+    padding: 5px;
+}
+/*FOOTER SECTION*/
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
